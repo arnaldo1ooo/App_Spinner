@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         String[] opciones = {"sumar", "restar", "multiplicar", "dividir"}; //Arreglo unidimensional
         //El ArrayAdapter sirve para comunicar el arreglo con el spinner
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, opciones);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.spinner_item_formato, opciones); //Se pone el formato personalizado que creamos
         spinner.setAdapter(adapter); //Se pone el adapter creado al spinner
     }
 
